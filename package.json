@@ -4,6 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc & vite build",
