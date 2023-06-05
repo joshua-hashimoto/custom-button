@@ -1,8 +1,4 @@
 {
-  "declaration": true,
-  "sourceMap": true,
-  "outDir": "./build",
-  "rootDir": "./src",
   "compilerOptions": {
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -24,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "index.js"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
