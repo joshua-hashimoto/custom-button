@@ -13,7 +13,7 @@ export default defineConfig({
     reportCompressedSize: true,
     lib: {
       entry: path.resolve(__dirname, "index.js"),
-      fileName: "main",
+      fileName: "index",
       formats: ["es", "cjs"],
     },
     rollupOptions: {
