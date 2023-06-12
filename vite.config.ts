@@ -12,7 +12,7 @@ export default defineConfig({
     minify: true,
     reportCompressedSize: true,
     lib: {
-      entry: path.resolve(__dirname, "index.js"),
+      entry: path.resolve(__dirname, "src/index.ts"),
       fileName: "index",
       formats: ["es", "cjs"],
     },
