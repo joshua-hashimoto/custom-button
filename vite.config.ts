@@ -13,7 +13,7 @@ export default defineConfig({
     reportCompressedSize: true,
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "CustomButton",
+      name: "custom-button",
       fileName: "index",
     },
     rollupOptions: {

@@ -1,4 +1,4 @@
-(function(y,T){typeof exports=="object"&&typeof module<"u"?T(exports,require("react")):typeof define=="function"&&define.amd?define(["exports","react"],T):(y=typeof globalThis<"u"?globalThis:y||self,T(y.CustomButton={},y.require$$0))})(this,function(y,T){"use strict";var q={exports:{}},x={};/**
+(function(y,T){typeof exports=="object"&&typeof module<"u"?T(exports,require("react")):typeof define=="function"&&define.amd?define(["exports","react"],T):(y=typeof globalThis<"u"?globalThis:y||self,T(y["custom-button"]={},y.require$$0))})(this,function(y,T){"use strict";var q={exports:{}},x={};/**
  * @license React
  * react-jsx-runtime.production.min.js
  *
