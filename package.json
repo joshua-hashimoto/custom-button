@@ -1,6 +1,6 @@
 {
   "name": "custom-button",
-  "main": "./dist/custom-button.ts.js",
+  "main": "./dist/custom-button.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -12,7 +12,8 @@
   "version": "0.0.0",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "dist/style.css"
   ],
   "scripts": {
     "dev": "vite",
