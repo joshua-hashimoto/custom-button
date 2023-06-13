@@ -19,11 +19,12 @@ export default defineConfig({
       fileName: (format) => `custom-button.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ["react", "react-dom", "antd"],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          antd: "AntDesign",
         },
       },
     },
