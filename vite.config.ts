@@ -12,12 +12,19 @@ export default defineConfig({
     minify: true,
     reportCompressedSize: true,
     lib: {
-      entry: path.resolve(__dirname, "src/index.ts"),
+      entry: path.resolve(__dirname, "dist/index.js"),
       fileName: "index",
       formats: ["es", "cjs"],
     },
     rollupOptions: {
-      external: [],
+      external: ["react"],
+      output: {
+        // Provide global variables to use in the UMD build
+        // for externalized deps
+        globals: {
+          vue: "React",
+        },
+      },
       plugins: [
         typescriptPaths({
           preserveExtensions: true,
