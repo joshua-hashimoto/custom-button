@@ -1,7 +1,7 @@
 {
   "name": "custom-button",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc & vite build",
+    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
     "prepare": "npm run build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
