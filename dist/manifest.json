@@ -1,7 +1,11 @@
 {
-  "dist/index.js": {
-    "file": "index.cjs",
+  "src/index.ts": {
+    "file": "index.umd.cjs",
     "isEntry": true,
-    "src": "dist/index.js"
+    "src": "src/index.ts"
+  },
+  "style.css": {
+    "file": "style.css",
+    "src": "style.css"
   }
 }

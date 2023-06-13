@@ -12,9 +12,9 @@ export default defineConfig({
     minify: true,
     reportCompressedSize: true,
     lib: {
-      entry: path.resolve(__dirname, "dist/index.js"),
+      entry: path.resolve(__dirname, "src/index.ts"),
+      name: "CustomButton",
       fileName: "index",
-      formats: ["es", "cjs"],
     },
     rollupOptions: {
       external: ["react"],
