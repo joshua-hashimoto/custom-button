@@ -2,18 +2,18 @@
   "name": "custom-button",
   "main": "./dist/custom-button.ts.js",
   "types": "./dist/index.d.ts",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
   "exports": {
     ".": {
       "import": "./dist/custom-button.es.js",
       "require": "./dist/custom-button.umd.js"
     }
   },
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
