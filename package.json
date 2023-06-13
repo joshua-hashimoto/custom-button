@@ -1,7 +1,7 @@
 {
   "name": "custom-button",
-  "main": "dist/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "./dist/custom-button.ts.js",
+  "types": "./dist/index.d.ts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,16 +10,17 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": "./dist/custom-button.es.js",
+      "require": "./dist/custom-button.umd.js"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && vue-tsc --emitDeclarationOnly && mv dist/src dist/types",
+    "build": "tsc && vite build",
     "prepare": "npm run build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -44,6 +45,7 @@
     "path": "^0.12.7",
     "rollup-plugin-typescript-paths": "^1.4.0",
     "typescript": "^5.0.2",
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.3.0"
   }
 }
